@@ -1,0 +1,93 @@
+/*----------------------------------------------------------------------
+  FONTS
+----------------------------------------------------------------------*/
+$font-family-base:     arial;
+$font-weight-base:     400;
+$font-family-headline: $font-family-base;
+$font-weight-headline: 700;
+$font-family-callout:  $font-family-base;
+$font-size-base:       10px;
+$line-height-base:     1.5;
+
+
+/*----------------------------------------------------------------------
+  COLORS
+----------------------------------------------------------------------*/
+/* Site colors */
+/* e.g. $brand-red: #ff000 */
+$body-color: #000;
+$headline-color: $body-color;
+$link-color: $body-color;
+$hover-color: $link-color;
+
+/* Makespace colors */
+$makespace-blue:   #7795b5;
+$makespace-brown:  #483735;
+$makespace-green:  #b2d78c;
+$makespace-orange: #ff7059;
+$makespace-red:    #ec453e;
+$makespace-purple: #9677b1;
+$makespace-bee-fill: rgba($makespace-brown, 0.5);
+$makespace-wing-fill: rgba($makespace-brown, 0.2);
+$makespace-brand-fill: rgba($makespace-brown, 0.5);
+
+/* Social media colors */
+$facebook-blue:    #3c5b9b;
+$google-plus-red:  #f63d27;
+$instagram-blue:   #517fa4;
+$pinterest-red:    #cb2027;
+$twitter-blue:     #2daae1;
+$youtube-red:      #e14e42;
+
+
+/*----------------------------------------------------------------------
+  FORMS
+----------------------------------------------------------------------*/
+$form-element-spacing: 1rem;
+$input-background:     #fff;
+$input-border-color:   #ddd;
+$input-border-radius:  0.25rem;
+$input-border-width:   1px;
+$input-padding:        0.5rem;
+$form-error-color:	   #f00;
+
+
+/*----------------------------------------------------------------------
+  CONTAINERS & GRID
+----------------------------------------------------------------------*/
+$gutter-width:        1.25rem;
+$grid-columns:        12;
+$container-max-width: 900px;
+$container-width:     85%;
+$design-width:        1240px;
+$visual-grid:         false;
+
+
+/*----------------------------------------------------------------------
+  BREAKPOINTS
+----------------------------------------------------------------------*/
+$phablet:  640px;
+$tablet:   768px;
+$laptop:   1024px;
+$desktop:  1280px;
+$fullsize: $design-width;
+$mobile-nav-breakpoint: $tablet;
+
+
+/*----------------------------------------------------------------------
+  CALCULATIONS & STANDARDS
+  You should not have to edit anything below this line. If so and you
+  believe it's a problem with or enhancement to the framework, be sure
+  to create an issue on Github:
+
+  https://github.com/makespaceweb/makespace-child/issues
+
+----------------------------------------------------------------------*/
+$border-box-sizing:  true;
+$fa-font-path:       'fonts';
+$max-width:          #{$container-max-width/$font-size-base}rem;
+
+$neat-grid: (
+  columns: $grid-columns,
+  gutter: $gutter-width
+);

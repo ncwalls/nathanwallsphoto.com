@@ -1,0 +1,22 @@
+{
+  "name": "wpframework",
+  "version": "2.0.0",
+  "description": "Jumping off point for the Makespace WordPress child theme",
+  "devDependencies": {
+    "normalize-scss": "^3.0.3",
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.7.1",
+    "magnific-popup": "^1.1.0"
+  },
+  "keywords": [
+    "Makespace",
+    "WordPress"
+  ],
+  "license": "GPL-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/bower_components"
+  ],
+  "private": true
+}

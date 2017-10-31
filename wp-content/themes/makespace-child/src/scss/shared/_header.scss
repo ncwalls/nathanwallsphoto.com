@@ -1,0 +1,26 @@
+.site-header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+
+#large-nav-primary{
+
+	@media (max-width : $mobile-nav-breakpoint) {
+		display: none;
+	}
+}
+
+#nav-toggle{
+	border-top: 0.25rem solid #000;
+	border-bottom: 0.25rem solid #000;
+	display: none;
+	height: 2.5rem;
+	width: auto;
+	
+	@media (max-width : $mobile-nav-breakpoint) {
+		display: block;
+	}
+}

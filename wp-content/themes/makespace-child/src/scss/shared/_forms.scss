@@ -1,0 +1,47 @@
+
+.gform_wrapper{
+	
+	.gform_title{
+	}
+	
+	.gfield{
+	
+		label{
+			display: block;
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+		
+		input,
+		select,
+		textarea{
+			background: $input-background;
+			display: block;
+			padding: 0.5rem 1rem;
+			width: 100%;
+		}
+		textarea{
+			height: 10rem;
+		}
+	}
+	.gfield_error{
+		input{
+			border: 1px solid $form-error-color;
+		}
+	}
+	
+	.button{
+	}
+	
+	.validation_error{
+		color: $form-error-color;
+		margin-bottom: 2rem;
+	}
+	.validation_message{
+		color: $form-error-color;
+		margin-bottom: -1rem;
+	}
+}
+
+.gform_confirmation_message{
+}

@@ -1,0 +1,38 @@
+{
+  "name": "wpframework",
+  "version": "2.0.0",
+  "description": "Custom installer for the Makespace WordPress framework",
+  "main": "index.js",
+  "scripts": {
+  	"beforerun": "npm install adm-zip async os ncp prompt simple-git",
+    "framework-editor": "npm run beforerun && node framework-editor.js && npm run afterrun",
+    "installer": "npm run beforerun && node installer.js && npm run afterrun",
+    "afterrun": "npm uninstall adm-zip async os ncp prompt simple-git && npm install && bower install"
+  },
+  "author": "Makespace",
+  "contributors": [
+    {
+      "name": "Joe Ponzio",
+      "url": "https://github.com/joeponzio"
+    },
+    {
+      "name": "Nathan Walls",
+      "url": "https://github.com/ncwalls"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.5"
+  }
+}
